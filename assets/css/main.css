@@ -25,7 +25,7 @@ body{
     letter-spacing: normal;
     margin-left: 210px;
     position: relative;
-    margin-top: 140px;
+    margin-top: 170px;
 }
 
 /* The typing effect */
@@ -59,16 +59,28 @@ body{
 
 #menu{
   width: 5%;
-  height: 300px;
-  border: 2px solid pink;
+  height: auto;
+
   position: absolute;
-  margin-top: 100px;
+  margin-top: 150px;
+  position: fixed;
 }
 #redes-sociales{
   width: 5%;
   height: 300px;
-  border: 2px solid pink;
+
   position: absolute;
   margin-top: 100px;
   margin-left: 1185px;
+}
+
+#menu nav ul li{
+  font-size: 23px;
+  text-decoration: none;
+  display: block;
+  line-height: 180%;
+}
+#menu nav{
+
+  margin-left: -14px;
 }
