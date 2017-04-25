@@ -1,3 +1,7 @@
+*, *:before, *:after {
+   box-sizing: inherit;
+ }
+
 body{
   font-family: 'Dancing Script', cursive;
   font-family: 'Parisienne', cursive;
@@ -13,36 +17,32 @@ body{
 
 #header{
   width: 100%;
-  height: auto;
+  height: 100vh;
+  overflow: hidden;
 }
 
-video#vidPortada {
-  position: relative;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: cover;
+#header video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-#titulo{
+.overlay{
   position: absolute;
   min-width: 100%;
   min-height: 100%;
   background-color: rgba(29, 42, 52, 0.37);
 }
 
-#titulo h1 {
+.overlay h1 {
+  position: absolute;
   font-size: 137px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid pink; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation:
-  typing 3.5s steps(40, end),
-  blink-caret .75s step-end infinite;
+  typing 3.0s steps(40, end),
+  blink-caret .80s step-end infinite;
   letter-spacing: normal;
-  position: absolute;
   top: 20%;
   left: 20%;
   color: pink;
@@ -51,36 +51,60 @@ video#vidPortada {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100%; }
+  to { width: 70%; }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: transparent; }
+.overlay h3{
+  position: absolute;
+  font-size: 35px;
+  font-family: Raleway,sans-serif;
+  white-space: nowrap;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  animation:
+  typing 3.5s steps(40, end),
+  blink-caret .80s step-end infinite;
+  letter-spacing: normal;
+  top: 50%;
+  left: 30%;
+  color: white;
+  font-weight: lighter;
 }
 
 #menu{
-  width: 5%;
+  width: 10%;
   height: auto;
   position: fixed;
-  top: 25%;
+  top: 30%;
   left: 1%;
 }
 
-#menu nav ul li{
-  font-size: 24px;
+#menu div {
+  border: 2px solid pink;
+  padding: 7px;
+  width:80%;
+  height: 20px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#menu div a{
+  color: white;
   text-decoration: none;
-  display: block;
-  line-height: 50px;
-  color: pink;
+  font-family: Roboto;
+  font-size: 17px;
+}
+
+#menu div:hover{
+  background-color: pink;
+  border: 3px dotted white;
+  color: rgb(41, 12, 19);
 }
 
 #redes-sociales{
   width: 5%;
   height: auto;
   position: fixed;
-  top: 25%;
+  top: 30%;
   right: 1%;
   font-size: 30px;
   color: pink;
@@ -89,8 +113,8 @@ video#vidPortada {
 
 /* Sección tendencias*/
 ·tendencias{
-  width: 100%;
+  width: 100px;
   height: 900px;
-  bottom: 0;
-  background-color: rgb(131, 137, 222);
+  background-color: red;
+  padding: 200px 7px;
 }
