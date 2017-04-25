@@ -31,12 +31,12 @@ body{
   position: absolute;
   min-width: 100%;
   min-height: 100%;
-  background-color: rgba(29, 42, 52, 0.37);
+
 }
 
 .overlay h1 {
   position: absolute;
-  font-size: 137px;
+  font-size: 8em;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   animation:
@@ -56,8 +56,8 @@ body{
 
 .overlay h3{
   position: absolute;
-  font-size: 35px;
-  font-family: Raleway,sans-serif;
+  font-size: 3em;
+  font-family: 'Open Sans Condensed',sans-serif;
   white-space: nowrap;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   animation:
@@ -71,33 +71,33 @@ body{
 }
 
 #menu{
-  width: 10%;
+  width: 13%;
   height: auto;
   position: fixed;
-  top: 30%;
-  left: 1%;
+  top: 20%;
+  left: 3%;
+  z-index: 10;
 }
 
-#menu div {
-  border: 2px solid pink;
-  padding: 7px;
-  width:80%;
-  height: 20px;
-  margin-left: 10px;
+#menu div{
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
   text-align: center;
+  background-image: url("../img/etiqueta1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #menu div a{
   color: white;
   text-decoration: none;
-  font-family: Roboto;
-  font-size: 17px;
-}
-
-#menu div:hover{
-  background-color: pink;
-  border: 3px dotted white;
-  color: rgb(41, 12, 19);
+  font-family: 'Open Sans Condensed';
+  font-size: 1.4em;
+  margin: 0;
+  vertical-align: middle;
+  font-weight: bold;
 }
 
 #redes-sociales{
@@ -105,120 +105,119 @@ body{
   height: auto;
   position: fixed;
   top: 30%;
-  right: 1%;
+  right: 3%;
   font-size: 30px;
   color: pink;
-  text-align: center;
+  text-align: right;
+  z-index: 10;
 }
 
 /* Sección tendencias*/
 #tendencias{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 554px;
-  margin-top: 80px;
+  background-image: url("../img/wallpaper.jpg");
+  width: 100%;
+  height: auto;
 }
 
-#tendencias #contenedor {
+#tendencias h1{
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0;
+}
 
+#tendencias-contenedor {
   padding: 20px;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  background-color: white;
   position: relative;
 }
+
 #verano{
   display:inline-block;
-  margin-left: 287px;
-  margin-top: -70px
-  position: absolute;
+  left: 100px;
+  top: 70;
+  position: relative;
+  margin-top: 20px;
 }
+
 #otoño{
   display: block;
-  position: absolute;
-  margin-left: 555px;
-  margin-top: -260px;
+  position: relative;
+  left: 340px;
+  margin-top: -210px;
 }
+
 #invierno{
-  margin-left: 319px;
-  margin-top: -10px;
+  position: relative;
+  margin-left: 170px;
+  margin-top: -110px;
 }
 
 #primavera {
-  margin-left: 550px;
-  margin-top: -245px;
-}
-#verano img{
-  width: 29%;
-  height: 250px;
   position: relative;
+  left: 340px;
+  top: -200px;
 }
+
+#verano img{
+  width: 34%;
+}
+
 #otoño img{
-  width: 47%;
-  height: 300px;
+  width: 42%;
 }
+
 #invierno img{
-  width: 26%;
-  height: 280px;
+  width: 37%;
+  height: 270px;
 }
+
 #primavera img{
-  width: 52%;
-  height: 250px;
+  width: 45%;
 }
+
 #verano figcaption span{
-  font-size: 45px;
-  color: white;
   margin-top: -160px;
   margin-left: 50px;
-  position: absolute;
-  opacity: 1;
-  font-weight: bold;
 }
-#verano figcaption:hover span{
-  opacity: 0;
-  top: 0;
-  color: pink;
-}
+
 #otoño figcaption span{
-  font-size: 45px;
-  color: white;
   margin-top: -180px;
-  margin-left: 95px;
-  position: absolute;
-  opacity: 1;
-  font-weight: bold;
+  margin-left: 90px;
 }
-#otoño figcaption:hover span{
-  opacity: 0;
-  top: 0;
-}
+
 #primavera figcaption span{
-  font-size: 45px;
-  color: white;
   margin-top: -170px;
   margin-left: 60px;
-  position: absolute;
-  opacity: 1;
-  font-weight: bold;
 }
-#primavera figcaption:hover span{
-  opacity: 0;
-  top: 0;
-}
+
 #invierno figcaption span{
-  font-size: 35px;
-  color: white;
   margin-top: -170px;
   margin-left: 35px;
-  position: absolute;
+}
+
+figure img{
+  transition: all 0.7s;
   opacity: 1;
+}
+
+figure figcaption span{
+  font-size: 40px;
+  color: white;
+  position: absolute;
   font-weight: bold;
 }
 
-#invierno figcaption:hover span{
-  opacity: 0;
-  top: 0;
+figure:hover figcaption span{
+  background-color: rgba(246, 32, 113, 0.6);
+  padding: 2px 7px;
+  width: auto;
 }
 
-.imagenes:hover{
+figure:hover img{
   background:#a5aba1;
   color:#494c46;
   -webkit-transform: scale(0.8);
@@ -227,12 +226,4 @@ body{
   box-shadow: inset 0 0 0 3px #555953;
   opacity: 0.5;
   position:relative;
-
-}
-
-#tendencias h1{
-  font-family: 'Asar', serif;
-  font-family: 'Open Sans Condensed', sans-serif;
-  margin-left: 500px;
-  padding-top: 20px;
 }
