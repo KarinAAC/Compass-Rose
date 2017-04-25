@@ -31,7 +31,6 @@ body{
   position: absolute;
   min-width: 100%;
   min-height: 100%;
-
 }
 
 .overlay h1 {
@@ -226,4 +225,179 @@ figure:hover img{
   box-shadow: inset 0 0 0 3px #555953;
   opacity: 0.5;
   position:relative;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#titulo-verano{
+  background-color: pink;
+  width: 20%;
+  height: 35px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+#guion{
+  width: 80%;
+  height: 3px;
+  background-color: pink;
+  margin-left: 120px;
+}
+#titulo-verano span{
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+#texto-verano{
+  text-align: justify;
+  margin: 20px 10px 0 170px;
+  width: 30%;
+
+}
+#texto-verano p{
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #777;
+  line-height: 31px;
+}
+#img-verano img{
+  width: 75%;
+  height: 500px;
+
+}
+#img-verano{
+  margin-left: 410px;
+  position: absolute;
+  margin-top: -440px;
+
+}
+#verano-contenedor{
+  margin: auto;
+}
+#titulo-otoño{
+  background-color: pink;
+  width: 20%;
+  height: 35px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+#guion-otoño{
+  width: 80%;
+  height: 3px;
+  background-color: pink;
+  margin-left: 120px;
+}
+#titulo-otoño span{
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+
+#titulo-primavera{
+  background-color: pink;
+  width: 22%;
+  height: 35px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+#guion-primavera{
+  width: 80%;
+  height: 3px;
+  background-color: pink;
+  margin-left: 120px;
+}
+#titulo-primavera span{
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+#titulo-invierno{
+  background-color: pink;
+  width: 20%;
+  height: 35px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+#guion-invierno{
+  width: 80%;
+  height: 3px;
+  background-color: pink;
+  margin-left: 120px;
+}
+#titulo-invierno span{
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+
+#img-invierno img{
+  width: 45%;
+  height: 400px;
+  margin-top: 10px;
+}
+#img-invierno{
+  margin-left: 170px;
+  margin-top: 50px;
+}
+#texto-invierno{
+  text-align: justify;
+  margin: -450px 10px 0 690px;
+  width: 30%;
+
+}
+#texto-invierno p{
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #777;
+  line-height: 31px;
+}
+#texto-primavera p{
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #777;
+  line-height: 31px;
+}
+#texto-primavera{
+  text-align: justify;
+  margin: 20px 10px 0 170px;
+  width: 40%;
+
+}
+#img-primavera{
+  margin-left: 700px;
+  margin-top: -440px;
+}
+#img-primavera img{
+  width: 78%;
+  height: 450px;
+  margin-top: -10px;
+}
+#texto-otoño{
+  text-align: justify;
+  margin: -450px 10px 0 610px;
+  width: 40%;
+}
+#texto-otoño p{
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #777;
+  line-height: 31px;
+}
+#img-otoño{
+margin-top: 50px;
+}
+#img-otoño img{
+  width: 35%;
+  height: 400px;
+  margin-left: 90px;
+
 }
