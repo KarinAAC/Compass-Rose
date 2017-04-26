@@ -219,7 +219,7 @@ a{
 }
 #texto-verano{
   text-align: justify;
-  margin: 20px 10px 0 170px;
+  margin: 40px 10px 0 670px;
   width: 30%;
 
 }
@@ -318,7 +318,7 @@ a{
 }
 #texto-invierno{
   text-align: justify;
-  margin: -450px 10px 0 690px;
+  margin: 40px 10px 0 690px;
   width: 30%;
 
 }
@@ -334,8 +334,8 @@ a{
 }
 #texto-primavera{
   text-align: justify;
-  margin: 20px 10px 0 170px;
-  width: 40%;
+  margin: 40px 10px 0 670px;
+  width: 35%;
 
 }
 #img-primavera{
@@ -349,8 +349,8 @@ a{
 }
 #texto-otoño{
   text-align: justify;
-  margin: -450px 10px 0 610px;
-  width: 40%;
+  margin: -10px 10px 0 675px;
+  width: 30%;
 }
 #texto-otoño p{
   font-family: 'Open Sans', arial, sans-serif;
@@ -364,5 +364,111 @@ margin-top: 50px;
   width: 35%;
   height: 400px;
   margin-left: 90px;
+}
+/* SECCION CATALOGO VIRTUAL */
+#catalogo{
+  width: 100%;
+  height: 670px;
+  position: relative;
+  margin-left: 450px;
+  padding-top: 40px;
+  padding-left: 450px;
+}
+#catalogo-contenedor{
+  width: 100%;
+  height: 670px;
 
+  position: absolute;
+  margin-top: 20px;
+
+}
+.catalogo-img{
+  width: 35%;
+  height: 500px;
+}
+
+#but1{
+
+font-size: 80px;
+margin-left: -55px;
+display: inline-block;
+margin-top: -300px;
+position: absolute;
+}
+#but2{
+
+  font-size: 80px;
+  display: inline-block;
+  margin-left: 450px;
+  position: absolute;
+  margin-top: -300px;
+}
+#catalogo h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 120px;
+    font-size: 35px;
+}
+#catalogo{
+  background-image: url("../img/back.jpg");
+  width: 100%;
+  height: 695px;
+  margin-left: 0px;
+  margin-top: -29px;
+
+}
+/* EFECTO IMÁGENES DE TEMPORADA */
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider {
+   overflow: hidden;position: absolute;
+   margin-top:20px;
+   padding: 20px;
+   width:40%;
+   margin-left: 100px;
+   }
+div#slider figure img { width: 20%; float: left;}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10s slidy infinite;
+}
+#div-volver{
+  background-color: pink;
+  width: 3%;
+  height: 40px;
+  margin-left: 1040px;
+  margin-top: -20px;
+  border-radius: 40px;
+}
+#div-volver h1{
+  font-size: 40px;
+  font-family: "Arial";
+  margin-left: 5px;
+}
+#div-volverVer{
+  background-color: pink;
+  width: 9%;
+  height: 40px;
+  margin-left: 350px;
+  margin-top: -20px;
+  border-radius: 40px;
+}
+#div-volverVer h1{
+  font-size: 40px;
+  font-family: "Arial";
+  margin-left: 5px;
 }
