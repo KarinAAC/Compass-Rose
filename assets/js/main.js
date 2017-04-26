@@ -12,8 +12,6 @@ playMusic.addEventListener("click", function(){
   }
 });
 
-
-
 audio.onplay = function() {
     letra.style.display="block";
 };
@@ -29,28 +27,29 @@ element.addEventListener("submit", function(event) {
   validateForm();
 });
 
-var a = "";  var b= ""; var c="";
+var a = "1";  var b= ""; var c="";
+//VALIDACION DE LA PRIMERA LETRA CON MAYUSCULA
+
+var inputs = document.getElementById("input-name");
+var validacionInputs = function (e) {
+  var arrDato=this.value.split(" ");
+  var datoConMayuscula = "";
+  for(var i=0; i<arrDato.length; i++){
+    datoConMayuscula += arrDato[i].charAt(0).toUpperCase()+arrDato[i].substring(1).toLowerCase() + " ";
+  }
+  this.value=datoConMayuscula;
+  }
+  inputs.onblur=validacionInputs;
+ 
 
 function validateForm(){
-  var name = document.getElementById("input-name");
   var email = document.getElementById("input-email");
   var message = document.getElementById("input-message");
 
-  validateName(name);
   validateEmail(email);
   validateMessage(message);
 }
 
-function validateName(name){
-  /** Validacion para nombre**/
-  if(name.value.length==0 || /^\s+|\s+$/.test(name.value)){
-    showToolTip("Debe ingresar su nombre",name); return false;
-  }
-  else {
-        a=1;
-    hiddenToolTip(name);
-  }
-}
 
 function validateEmail(email){
   if(email.value.length==0 || /^\s+|\s+$/.test(email.value)){
@@ -115,16 +114,3 @@ function drop(e) {
     var data = e.dataTransfer.getData("text");
     e.target.appendChild(document.getElementById(data));
 }
-
-//VALIDACION DE LA PRIMERA LETRA CON MAYUSCULA
-
-var inputs = document.getElementById("input-name");
-var validacionInputs = function (e) {
-  var arrDato=this.value.split(" ");
-  var datoConMayuscula = "";
-  for(var i=0; i<arrDato.length; i++){
-    datoConMayuscula += arrDato[i].charAt(0).toUpperCase()+arrDato[i].substring(1).toLowerCase() + " ";
-  }
-  this.value=datoConMayuscula;
-  }
-  inputs.onblur=validacionInputs;
