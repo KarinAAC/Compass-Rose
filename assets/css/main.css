@@ -23,7 +23,8 @@ a{
 
 .my-audio{
   position: fixed;
-
+  top:20px;
+  right: 10px;
   width: 20%;
   height: 28px;
 }
@@ -31,7 +32,7 @@ a{
 #letra{
   display: none;
   position: fixed;
-  top: 35px;
+  top: 50px;
   right: 10px;
   color: white;
   font-family: 'Open Sans Condensed';
