@@ -370,6 +370,7 @@ margin-top: 50px;
   margin: 0 auto;
   background-color: white;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 #catalogo h1{
@@ -381,7 +382,7 @@ margin-top: 50px;
 
 .catalogo-img{
   width: 60%;
-  height: auto;
+  height: 600px;;
   margin: auto;
 }
 
