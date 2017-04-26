@@ -3,7 +3,7 @@ body{
   margin: 0;
 }
 
-#header{
+#er{
   font-family: 'League Script', cursive;
   width: 100%;
   height: 100vh;
@@ -387,6 +387,7 @@ margin-top: 50px;
 }
 
 #but1{
+  cursor: pointer;
   font-size: 80px;
   left: 25%;
   display: inline-block;
@@ -395,6 +396,7 @@ margin-top: 50px;
 }
 
 #but2{
+  cursor: pointer;
   font-size: 80px;
   display: inline-block;
   right: 25%;
