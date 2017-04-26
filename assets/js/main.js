@@ -1,3 +1,27 @@
+/*Función de tocar y detener audio */
+var letra = document.getElementById("letra");
+var audio = document.getElementById("myAudio");
+var musica = document.getElementById("musica");
+var playMusic = document.getElementById("playMusic");
+playMusic.addEventListener("click", function(){
+  if( musica.style.display=="none"){
+    musica.setAttribute("style","display: block");
+  }
+  else{
+  musica.setAttribute("style","display:none");
+  }
+});
+
+
+
+audio.onplay = function() {
+    letra.style.display="block";
+};
+
+audio.onpause = function(){
+    letra.style.display="none";
+}
+
 /** Validacion Formulario **/
 var element = document.querySelector(".form");
 element.addEventListener("submit", function(event) {
@@ -32,6 +56,7 @@ function validateEmail(email){
   if(email.value.length==0 || /^\s+|\s+$/.test(email.value)){
     showToolTip("Debe ingresar su correo electrónico",email);return false;
   }
+
   else if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+(\w{2,4})+$/.test(email.value))) {
     showToolTip("Correo no válido. Ejemplo: name@domain.com",email);return false;
   }
