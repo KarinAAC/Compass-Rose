@@ -100,3 +100,31 @@ function callModal() {
   })
 
 }
+
+/** Evento drag & drog**/
+function allowDrop(e) {
+    e.preventDefault();
+}
+
+function drag(e) {
+    e.dataTransfer.setData("text", e.target.id);
+}
+
+function drop(e) {
+    e.preventDefault();
+    var data = e.dataTransfer.getData("text");
+    e.target.appendChild(document.getElementById(data));
+}
+
+//VALIDACION DE LA PRIMERA LETRA CON MAYUSCULA
+
+var inputs = document.getElementById("input-name");
+var validacionInputs = function (e) {
+  var arrDato=this.value.split(" ");
+  var datoConMayuscula = "";
+  for(var i=0; i<arrDato.length; i++){
+    datoConMayuscula += arrDato[i].charAt(0).toUpperCase()+arrDato[i].substring(1).toLowerCase() + " ";
+  }
+  this.value=datoConMayuscula;
+  }
+  inputs.onblur=validacionInputs;

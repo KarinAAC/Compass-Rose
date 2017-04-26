@@ -1,12 +1,4 @@
 body{
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Parisienne', cursive;
-  font-family: 'Miss Fajardose', cursive;
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-family: 'Calligraffitti', cursive;
-  font-family: 'Sacramento', cursive;
-  font-family: 'Great Vibes', cursive;
-  font-family: 'League Script', cursive;
   justify-content: center;
   margin: 0;
 }
@@ -29,6 +21,7 @@ body{
 }
 
 #header{
+  font-family: 'League Script', cursive;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -46,7 +39,7 @@ body{
   min-height: 100%;
 }
 
-.overlay h1 {
+.overlay h1{
   position: absolute;
   font-size: 8em;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -86,7 +79,7 @@ body{
   width: 13%;
   height: auto;
   position: fixed;
-  top: 20%;
+  top: 15%;
   left: 3%;
   z-index: 10;
 }
@@ -415,6 +408,7 @@ margin-top: 50px;
 }
 
 #but1{
+  cursor: pointer;
   font-size: 80px;
   left: 25%;
   display: inline-block;
@@ -423,6 +417,7 @@ margin-top: 50px;
 }
 
 #but2{
+  cursor: pointer;
   font-size: 80px;
   display: inline-block;
   right: 25%;
@@ -487,6 +482,56 @@ div#slider figure {
   font-size: 40px;
   font-family: "Arial";
   margin-left: 5px;
+}
+
+/* Sección vestuario*/
+#vestuario{
+  background-image: url("../img/wallpaper.jpg");
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-vestuario {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+.contenedor-vestuario h1, .contenedor-vestuario p{
+  margin: 0;
+  font-family: 'Open Sans Condensed', serif;
+  padding-top: 10px;
+}
+
+.contenedor-vestuario h1{
+  padding-top: 40px;
+}
+
+#silueta{
+  background-image: url("../img/silueta.png");
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  vertical-align: middle;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.prendas{
+  position: relative;
+  top: 60px;
+  width: 170px;
+  text-align: center;
+  margin: 10px;
+}
+
+#div1, #div2, #div3, #div4, #div5{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
 }
 
 /** Seccion formulario **/
@@ -617,4 +662,18 @@ div#slider figure {
 .modal-close:focus {
    color: #fff;
    cursor: pointer;
+}
+
+/** Footer **/
+footer{
+  width: auto;
+  height: 30px;
+  background-color: pink;
+  color: rgb(42, 12, 17);
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 20px;
+  vertical-align: middle;
 }
