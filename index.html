@@ -16,15 +16,16 @@
 <body>
   <header id="header">
     <div class="overlay">
-        <h1>Compass Rose</h1>
-        <h3>Moda, tendencias, tips y más...</h3>
+      <h1>Compass Rose</h1>
+      <h3>Moda, tendencias, tips y más...</h3>
     </div>
     <video autoplay muted poster="assets/img/portada.png" width="1280" height="240" loop>
-      <source src="assets/video/video_portada.m4v" type="video/mp4" />
-      <source src="assets/video/video_portada.webm" type="video/webm" />
+      <source src="assets/video/video_portada.m4v" type="video/mp4"/>
+      <source src="assets/video/video_portada.webm" type="video/webm"/>
         Tu navegador no soporta HTML5 Video
     </video>
     <div id="menu">
+      <div><a href="#header">Home</a></div>
       <div><a href="#catalogo">Catálogo</a></div>
       <div><a href="#tendencias">Tendencias</a></div>
       <div><a href="#vestuario">Vestuario</a></div>
@@ -55,6 +56,7 @@
         <span id="but2" onclick="plusDivs(1)">&#10095;</span>
     </div>
   </section>
+
   <section id="tendencias">
     <div id="tendencias-contenedor">
       <h1>TENDENCIAS DE TEMPORADA</h1>
@@ -80,6 +82,30 @@
       </figure>
     </div>
   </section>
+
+  <section id="vestuario">
+    <div class="contenedor-vestuario">
+      <h1>VESTUARIO VIRTUAL</h1>
+      <p>Prueba nuestros vestidos en la silueta</p>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="assets/img/vestido-rojo.png" alt="" draggable="true" ondragstart="drag(event)" id="drag1" class="prendas">
+      </div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="assets/img/vestido-azul.png" alt="" draggable="true" ondragstart="drag(event)" id="drag2" class="prendas">
+      </div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="assets/img/vestido-rosado.png" alt="" draggable="true" ondragstart="drag(event)" id="drag3" class="prendas">
+      </div>
+      <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="assets/img/vestido-celeste.png" alt="" draggable="true" ondragstart="drag(event)" id="drag4" class="prendas">
+      </div>
+      <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="assets/img/vestido-rosa.png" alt="" draggable="true" ondragstart="drag(event)" id="drag5" class="prendas">
+      </div>
+      <div ondrop="drop(event)" ondragover="allowDrop(event)" id="silueta"></div>
+    </div>
+  </section>
+
   <section id="contactanos" class="form-container">
     <div class="contenedor-contactanos">
       <form class="form">
@@ -108,6 +134,9 @@
     <span class="modal-close" id="modalClose">&times;</span>
     <p>Su mensaje ha sido enviado</p>
   </div>
+  <footer>
+    <span>&copy 2017 Created by Karin Alejo & Liliana Peña</span>
+  </footer>
 <!--CODIGO DE JAVA SCRIPT-->
 <script src="assets/js/main.js" charset="utf-8"></script>
 <script src="assets/js/slide.js" charset="utf-8"></script>
