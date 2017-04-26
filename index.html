@@ -20,7 +20,7 @@
         <h3>Moda, tendencias, tips y más...</h3>
     </div>
     <video autoplay muted poster="assets/img/portada.png" width="1280" height="240" loop>
-      <source src="assets/video/video_portada.mp4" type="video/mp4" />
+      <source src="assets/video/video_portada.m4v" type="video/mp4" />
       <source src="assets/video/video_portada.webm" type="video/webm" />
         Tu navegador no soporta HTML5 Video
     </video>
@@ -67,12 +67,12 @@
 
   <section id="contactanos" class="form-container">
     <div class="contenedor-contactanos">
-      <form class="form" novalidate>
+      <form class="form">
         <h2 id="form-heading">Contáctanos</h2>
         <p>Estamos cerca de ti, en donde te encuentres y a la hora que lo necesites. Con gusto atenderemos tus dudas, comentarios y/o sugerencias.</p>
         <div class="input-box">
           <label for="name">Nombres y apellidos</label>
-          <input type="text" id="input-name" class="form-control" placeholder="Ingrese su nombre y apellido" autofocus>
+          <input type="text" id="input-name" class="form-control" placeholder="Ingrese su nombre y apellido">
           <span></span>
         </div>
         <div class="input-box">
@@ -89,6 +89,12 @@
       </form>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <p>Su mensaje ha sido enviado</p>
+  </div>
 <!--CODIGO DE JAVA SCRIPT-->
 <script src="assets/js/main.js" charset="utf-8"></script>
 </body>
